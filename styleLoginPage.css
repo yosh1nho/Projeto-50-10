@@ -60,7 +60,7 @@ h1 {
 .login-form button {
     width: 100%;
     padding: 10px;
-    background-color: #126615;
+    background-color: #2A5F62;
     color: white;
     border: none;
     cursor: pointer;
@@ -68,7 +68,7 @@ h1 {
 }
 
 .login-form button:hover {
-    background-color: #16781b;
+    background-color: #285c5c;
 }
 
 .logo-zen {
@@ -128,7 +128,7 @@ h1 {
 
 /* Quando ativado */
 input:checked + .slider {
-    background-color: #4CAF50;
+    background-color: #2A5F62;
 }
 
 input:checked + .slider:before {
