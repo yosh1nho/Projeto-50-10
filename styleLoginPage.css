@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.image-section {
+    flex: 2; /* Ocupa 2 partes do espaço */
+    background-image: url('natalia-grabarczyk-dupe.jpeg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-width: 50%;
+}
+
+.login-section {
+    flex: 1; /* Ocupa 1 parte do espaço */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30%;
+}
+
+.login-form {
+    width: 300px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: none;
+    background-color: #e5e5e5;
+}
+
+.login-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.logo-zen {
+    width: 178px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o switch e o texto */
+}
+
+/* Reduz o tamanho do switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px; /* Diminuiu a largura */
+    height: 18px; /* Diminuiu a altura */
+}
+
+/* Esconde o checkbox padrão */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Fundo do switch */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 18px;
+}
+
+/* Círculo interno */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px; /* Reduziu o tamanho */
+    width: 12px; /* Reduziu o tamanho */
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Quando ativado */
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(16px); /* Ajustado para o novo tamanho */
+}
+
+/* Ajuste do texto */
+.label-text {
+    font-size: 16px; /* Reduziu um pouco */
+    cursor: pointer; /* Permite clicar no texto para ativar o switch */
+}
