@@ -60,14 +60,15 @@ h1 {
 .login-form button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #126615;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 7px;
 }
 
 .login-form button:hover {
-    background-color: #45a049;
+    background-color: #16781b;
 }
 
 .logo-zen {
