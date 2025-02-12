@@ -140,3 +140,42 @@ input:checked + .slider:before {
     font-size: 16px; /* Reduziu um pouco */
     cursor: pointer; /* Permite clicar no texto para ativar o switch */
 }
+
+
+.senha-container {
+    position: relative; /* Define um contêiner relativo para o botão */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.senha-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Espaço para o ícone */
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+/* Garante que o botão do olho não seja afetado */
+.senha-container .toggle-button {
+    position: absolute;
+    right: 10px; /* Mantém o ícone fixo no canto direito do input */
+    top: 42%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste do tamanho do ícone */
+.senha-container .toggle-button img {
+    width: 20px;
+    height: 20px;
+}
