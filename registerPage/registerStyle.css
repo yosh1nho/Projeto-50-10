@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li.login-link {
-    margin-left: auto; /* Move o link de login para a direita */
+    margin-right: auto; /* Move o link de login para a direita */
 }
 
 nav ul li a {
@@ -42,6 +42,7 @@ nav ul li a:hover {
 .logo {
     width: 60px; /* Ajuste o tamanho conforme necessário */
     height: auto;
+    margin-left: auto;
 }
 
 h1 {
@@ -58,14 +59,18 @@ label, input {
     margin-bottom: 10px;
 }
 
+input[type="submit"], input[type="text"], input[type="password"], input[type="email"] {
+    padding: 5px; /* Aumenta o padding vertical dos inputs */
+}
+
 input[type="submit"] {
     background-color: #2A5F62;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     border-radius: 7px;
+    padding: 10px;
 }
 
 input[type="submit"]:hover {
