@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Professor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="professorPageStyle.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css' rel='stylesheet' />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/Projeto-50-10/index.html"><img src="/Projeto-50-10/img/Buddha hand-bro.png" alt="logo" class="logo"></a>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Pesquisar Alunos</a></li>
+                <li><a href="#">Agenda</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Olá nome_professor</h1>
+    <main>
+        <section class="dashboard">
+            <div class="table-container">
+                <h2 id="activities-title">Atividades Marcadas para Hoje</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Atividade</th>
+                            <th>Duração</th>
+                            <th>Studio/Sala</th>
+                            <th>Vagas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7:00</td>
+                            <td>Aula de Pilates</td>
+                            <td>45 min</td>
+                            <td>Studio 2</td>
+                            <td>7/10</td>
+                        </tr>
+                        <tr>
+                            <td>8:15</td>
+                            <td>Avaliação Física</td>
+                            <td>10 min</td>
+                            <td>Sala 1</td>
+                            <td>1/1</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Treino Individual</td>
+                            <td>1 hora</td>
+                            <td>Studio 1</td>
+                            <td>1/1</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar-container">
+                <h2>Calendário</h2>
+                <div id='calendar'></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 IPCA EST</p>
+    </footer>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js'></script>
+    <script src="scriptProfessorPage.js"></script>
+</body>
+</html>

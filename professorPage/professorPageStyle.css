@@ -1,0 +1,127 @@
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container, .calendar-container {
+    width: 48%; /* Ajuste a largura conforme necessário */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    max-height: 400px; /* Ajuste a altura conforme necessário */
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2A5F62;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.calendar {
+    text-align: center;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.calendar th {
+    background-color: #2A5F62;
+    color: white;
+}
+header {
+    width: 100%;
+    background-color: #2A5F62;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #2A5F62;
+    padding: 10px;
+    display: none;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.logo {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
