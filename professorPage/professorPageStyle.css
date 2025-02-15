@@ -1,8 +1,74 @@
 body {
     font-family: 'Zen Kaku Gothic New', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0; /* Remover padding do body */
     background-color: #f4f4f4;
+}
+
+header {
+    width: 100%;
+    background-color: #2A5F62;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    position: fixed; /* Fixar o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garantir que o cabeçalho fique acima de outros elementos */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #2A5F62;
+    padding: 10px;
+    display: none;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+.logo {
+    width: 60px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+h1 {
+    margin-top: 80px; /* Adicionar margem superior para compensar o cabeçalho fixo */
+    text-align: center;
 }
 
 h2 {
@@ -12,6 +78,7 @@ h2 {
 .dashboard {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px; /* Adicionar margem superior para espaçamento */
 }
 
 .table-container, .calendar-container {
@@ -65,63 +132,4 @@ tr:hover {
 .calendar th {
     background-color: #2A5F62;
     color: white;
-}
-header {
-    width: 100%;
-    background-color: #2A5F62;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-}
-
-.hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #2A5F62;
-    padding: 10px;
-    display: none;
-}
-
-.nav-links li {
-    margin: 10px 0;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    color: #ddd;
-}
-
-.logo {
-    width: 60px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
 }
