@@ -65,6 +65,7 @@ h1 {
     border: none;
     cursor: pointer;
     border-radius: 7px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 .login-form button:hover {
