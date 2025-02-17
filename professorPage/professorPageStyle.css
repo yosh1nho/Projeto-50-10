@@ -16,6 +16,18 @@ header {
     left: 0;
     z-index: 1000; /* Garantir que o cabeçalho fique acima de outros elementos */
 }
+#navbarDropdown {
+    color: white !important; /* Muda a cor do texto do navbar para branco */
+}
+#navbarDropdown:hover {
+    color: #ddd !important; /* Muda a cor do texto do navbar para branco ao passar o mouse */
+}
+
+.nav-item::marker { /*tira o ponto da ul*/
+    content: none; 
+    display: none;
+}
+  
 
 nav {
     display: flex;

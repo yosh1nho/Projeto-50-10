@@ -19,7 +19,7 @@ h1 {
 
 .image-section {
     flex: 2; /* Ocupa 2 partes do espaço */
-    background-image: url('/Projeto-50-10/img/natalia-grabarczyk-dupe.jpeg.jpg');
+    background-image: url('/img/natalia-grabarczyk-dupe.jpeg.jpg');
     background-size: cover;
     background-position: center;
     min-width: 50%;
