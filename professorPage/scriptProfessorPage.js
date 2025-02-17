@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 start: '2023-02-01T10:00:00',
                 end: '2023-02-01T11:00:00'
             }
-            // Adicione mais eventos conforme necessário
         ],
         dateClick: function(info) {
             updateTitle(new Date(info.dateStr));

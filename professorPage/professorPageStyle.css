@@ -27,6 +27,9 @@ nav {
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 55px; 
 }
 
 .hamburger .line {
@@ -62,7 +65,7 @@ nav {
 }
 
 .logo {
-    width: 60px; /* Ajuste o tamanho conforme necessário */
+    width: 60px; 
     height: auto;
 }
 
@@ -82,7 +85,7 @@ h2 {
 }
 
 .table-container, .calendar-container {
-    width: 48%; /* Ajuste a largura conforme necessário */
+    width: 48%; 
     background-color: white;
     padding: 20px;
     border: 1px solid #ddd;
@@ -91,7 +94,7 @@ h2 {
 }
 
 .table-container {
-    max-height: 400px; /* Ajuste a altura conforme necessário */
+    max-height: 400px; 
     overflow-y: auto;
 }
 

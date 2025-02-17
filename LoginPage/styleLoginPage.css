@@ -73,7 +73,7 @@ h1 {
 }
 
 .logo-zen {
-    width: 178px; /* Ajuste o tamanho conforme necessário */
+    width: 178px; 
     margin-bottom: 20px;
     display: block;
     margin-left: auto;
@@ -133,7 +133,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(16px); /* Ajustado para o novo tamanho */
+    transform: translateX(16px); 
 }
 
 /* Ajuste do texto */

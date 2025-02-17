@@ -40,7 +40,7 @@ nav ul li a:hover {
     color: #ddd; /* Cor do link ao passar o mouse */
 }
 .logo {
-    width: 60px; /* Ajuste o tamanho conforme necessário */
+    width: 60px; 
     height: auto;
     margin-left: auto;
 }
