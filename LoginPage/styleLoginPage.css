@@ -2,9 +2,18 @@ body {
     margin: 0;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 100vh;
+    background-color: lightblue;
+    background: linear-gradient(to right, white, rgb(110, 200, 182));/*muda a cor de branco para tons de verde-agua suavemente*/
+    display: flex;/*modelo de layout para organizar elementos de forma eficiente dentro de um contêiner.*/
+    /*teste*/
+    /*teste para criar um conteiner no login*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    /*fim de teste*/
 }
 
 h1 {
@@ -12,9 +21,15 @@ h1 {
     margin-bottom: 20px;
 }
 .container {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    /*box-shadow*/
+    position:relative;
+    overflow: hidden;
+    width: 53vh;
+    max-width: 100%;
+    min-height: 400px;
+
 }
 
 .image-section {
@@ -29,8 +44,9 @@ h1 {
     flex: 1; /* Ocupa 1 parte do espaço */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     min-width: 30%;
+    
 }
 
 .login-form {
@@ -73,7 +89,7 @@ h1 {
 }
 
 .logo-zen {
-    width: 178px; 
+    width: 150px; 
     margin-bottom: 20px;
     display: block;
     margin-left: auto;

@@ -7,12 +7,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleLoginPage.css">
 </head>
+
 <body>
     <div class="container">
         <div class="image-section"></div>
+
+
         <div class="login-section">
             <form action="/login" method="post" class="login-form">
-                <a href="/Projeto-50-10/index.html">
+                <a href="/index.html">
                     <img src="/img/Buddha hand-bro.png" alt="zen simbolo" class="logo-zen">
                 </a>
                 <h1>Seja Bem-Vindo!</h1>
@@ -20,7 +23,7 @@
                 <input type="text" id="username" name="username" required placeholder="Email ou Nº Sócio"><br><br>
                 <label for="password">Palavra-Passe:</label>
                 <div class="senha-container">
-                    <input type="password" name="senha" id="password" placeholder="Digite sua senha">
+                    <input type="password" name="senha" id="password" placeholder="Palavra-Passe">
                     <button type="button" class="toggle-button">
                         <img src="/img/eyeClosed.png" alt="Mostrar senha">
                     </button>
@@ -30,7 +33,7 @@
                         <input type="checkbox" id="remember-me" name="remember-me">
                         <span class="slider"></span>
                     </label>
-                    <label for="remember-me" class="label-text">Lembre de mim</label>
+                    <label for="remember-me" class="label-text">Relembrar-me</label>
                 </div>
                 <button type="submit">Login</button>
 
@@ -39,6 +42,8 @@
                 </footer>
             </form>
         </div>
+
+        
     </div>
 
 
@@ -62,4 +67,5 @@
         });
     </script>
 </body>
+
 </html>
