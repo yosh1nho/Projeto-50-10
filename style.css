@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Atkinson Hyperlegible Next', 'Roboto', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.flexbox {
+    background-color: aqua;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.bem-vindo{
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.container {
+    background-color: rgba(74, 51, 51, 0.7); /* O último valor (0.7) define a opacidade */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 53vh;
+    max-width: 100%;
+    min-height: 400px;
+}
+
+
+.background-img{
+    background-image: url('./img/BGimg.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
