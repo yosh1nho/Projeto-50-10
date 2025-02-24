@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Conta</title>
+    <title>Página de Login</title>
     <link rel="icon" href="\img\icon\Buddha-hand-bro.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="registerStyle.css">
-    <script src="registerScript.js" defer></script>
+    <link rel="stylesheet" href="styleLoginPage.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>            
-                <li><a href="/Projeto-50-10/index.html"><img src="/Projeto-50-10/img/Buddha hand-bro.png" alt="logo" class="logo"></a></li>
-                <li><a href="/Projeto-50-10/LoginPage/loginpage.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Registro</h1>
-    <form id="registrationForm" action="submit_registration.php" method="post">
-        
-        <label for="password">Nome:</label>
-        <input type="nome" id="nome" name="nome" required><br>
 
-        <label for="password">Morada:</label>
-        <input type="morada" id="morada" name="morada" required><br>
+    <div class="container">
+        <div class="image-section"></div>
+        <div class="register-section">
+            <form action="" method="post" class="register-form">
+                <a href="/index.html">
+                    <img src="/img/Buddha hand-bro.png" alt="zen simbolo" class="logo-zen">
+                </a>
+                <h1>Seja Bem-Vindo!</h1>
+                <label for="username">registo:</label>
+                <input type="text" id="username" name="username" required placeholder="Email ou Nº Sócio"><br>
+                <label for="password">Palavra-Passe:</label>
+                <div class="senha-container">
+                    <input type="password" name="senha" id="password" placeholder="Palavra-Passe">
+                    <button type="button" class="toggle-button">
+                        <img src="/img/eyeClosed.png" alt="Mostrar senha">
+                    </button>
+                </div>
+                <div class="switch-container">
+                    <label class="switch">
+                        <input type="checkbox" id="remember-me" name="remember-me">
+                        <span class="slider"></span>
+                    </label>
+                    <label for="remember-me" class="label-text">Relembrar-me</label>
+                </div>
+                
+                <button type="submit">Login</button>
 
-        <label for="password">Palavra-Passe:</label>
-        <input type="password" id="password" name="password" required><br>
-        
-        <label for="confirm_password">Confirme Palavra-Passe:</label>
-        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
-        
-        <input type="submit" value="Realizar Registro">
-        <p id="error-message" style="color: red;"></p>
-    </form>
+                <footer>
+                    <p>&copy; 2025 IPCA EST</p>
+                </footer>
+            </form>
+        </div>
+   </div>
+   
+
+ 
 
 
-    <footer>
-        <p>&copy; 2025 IPCA EST</p>
-    </footer>
+
+    <script>
+        document.querySelector(".toggle-button").addEventListener("click", function () {
+            const passwordInput = document.getElementById("password");
+            const toggleButton = document.querySelector(".toggle-button img");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleButton.src = "/Projeto-50-10/img/eyeOpen.png"; // Troca para o ícone de olho aberto
+                toggleButton.alt = "Ocultar senha";
+            } else {
+                passwordInput.type = "password";
+                toggleButton.src = "/Projeto-50-10/img/eyeClosed.png"; // Troca para o ícone de olho fechado
+                toggleButton.alt = "Mostrar senha";
+            }
+        });
+    </script>
 </body>
+
 </html>
