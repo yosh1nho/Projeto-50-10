@@ -6,7 +6,6 @@
     <title>Registro de Conta</title>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="registerStyle.css">
-    <script src="registerScript.js" defer></script>
 </head>
 
 <body>
@@ -19,9 +18,15 @@
         </nav>
     </header>
     <h1>Registro</h1>
-    <form id="registrationForm" action="submit_registration.php" method="post">
+    <form id="registrationForm" action="/register" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required><br>
+
         <label for="password">Palavra-Passe:</label>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" required><br>
         
         <label for="confirm_password">Confirme Palavra-Passe:</label>
         <input type="password" id="confirm_password" name="confirm_password" required><br><br>
