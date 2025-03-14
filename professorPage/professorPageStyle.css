@@ -21,6 +21,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: background-color 1s, color 1s; 
 }
 
 .hamburger {
@@ -45,23 +46,28 @@ nav {
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 20px;
+    right: 40px;
     background-color: #2A5F62;
     padding: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
     display: none;
+    
 }
 
 .nav-links li {
     margin: 10px 0;
+       
 }
 
 .nav-links a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 .nav-links a:hover {
     color: #ddd;
+    
 }
 
 .logo {
