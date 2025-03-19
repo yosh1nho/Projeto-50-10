@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- suporte para todo o tipo de caracteres e acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- faz com que a largura da pagina corresponda à largura do ecra do nosso dispositivo-->
+    <title>Página de Login</title> <!-- titulo da pagina do site de login -->
+    <link rel="icon" href="\img\icon\Buddha-hand-bro.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"><!-- hiper texto para link de folha de estilo-->
+    <link rel="stylesheet" href="styleLoginPage.css"><!-- vincula a folha de estilo externa e contem regras css, como cores, fontes e espaçamentos-->
+</head>
+<!-- /////////////// -->
+
+<!-- CORPO DO NOSSO SITE  -->
+<body>
+
+    <div class="container"><!---criaçao da class container para agrupar seccçoes da pagina -->
+        <div class="image-section"></div> <!-- criada outra class para conter imagens -->
+        <div class="login-section"><!-- criação de uma class login para contem login e informaçoes relacionada com ele-->
+
+            <form action="/login" method="post" class="login-form"><!-- é criado um formulario onde os dados inseridos nesse mesmo serao enviados para o endereço do login-->
+                 <!-- TAG -->
+                <a href="/index.html"><!-- link que redirecionada para a index.html contida na pasta-->
+                    <img src="Login_page.png" alt="zen simbolo" class="logo-zen"><!-- inserçao de imagens com descrição do texto -->
+                </a>
+
+                <h1>Seja Bem-Vindo!</h1> <!-- cabeçalho do site (titulo do login) -->
+                <label for="username">Login:</label><!--uma etiqueta foi criada para o campo de entrada de texto para username -->
+                <input type="text" id="username" name="username" required placeholder="Email ou Nº Sócio"><br><!-- campo de entrada criado com varios parametros "texto", "username", ilustração de um texto -->
+
+                <label for="password">Palavra-Passe:</label><!-- etiqueta foi criado para o campo de entrada de texto para a password -->
+                <div class="senha-container"><!-- criada uma class para a senha -->
+
+                    <input type="password" name="senha" id="password" placeholder="Palavra-Passe"><!-- campo de entrada criado com varios parametros "password", "senha", ilustração de um texto -->
+                    <button type="button" class="toggle-button"><!-- criação de um botao  para ilustrar a palavra pass -->
+                        <img src="Login_img_3.png" alt="Mostrar senha"> <!-- imagem inserida como botao -->
+                    </button>
+
+                </div>
+
+                <!-- criaçao do botao de switch para lembrar as credenciais  -->
+                <div class="switch-container"> <!-- criação de class no que toca ao botao de switch -->
+                    <label class="switch"><!-- class criada para o modo do botao-->
+                        <input type="checkbox" id="Lembrar credenciais" name="Lembrar credenciais"><!-- campo de entrada criado com varios parametros "checkbox", "Lembrar", ilustração de um texto -->
+                        <span class="slider"></span><!-- tipo de botao -->
+                    </label>
+                    <label for="Lembrar credenciais " class="label-text">Lembrar credenciais</label>
+                </div>
+                
+                <button type="submit">Login</button><!-- botao de envio das credenciais -->
+
+                <footer>
+                    <p>&copy; 2025 IPCA EST</p>
+                </footer>
+            </form>
+        </div>
+   </div>
+
+ 
+
+
+     <!-- TAG  de um bloco que é executado como javascript-->
+    <script>
+        // aqui o evento so inicia quando clica-se no evento 
+        document.querySelector(".toggle-button").addEventListener("click", function () 
+        {
+            const passwordInput = document.getElementById("password");// constante criada para armazenar a password 
+            const toggleButton = document.querySelector(".toggle-button img");// constante criada para armazenar a imagem
+
+            if (passwordInput.type === "password") // verifica se o conteudo inserido no campo é password
+            
+            {
+                passwordInput.type = "text";
+                toggleButton.src = "Login_img_2.png"; // Troca para o ícone de olho aberto
+                toggleButton.alt = "Ocultar senha";
+            } else 
+            {
+                passwordInput.type = "password";
+                toggleButton.src = "Login_img_3.png"; // Troca para o ícone de olho fechado
+                toggleButton.alt = "Mostrar senha";
+            }
+        });
+    </script>
+</body>
+
+</html>

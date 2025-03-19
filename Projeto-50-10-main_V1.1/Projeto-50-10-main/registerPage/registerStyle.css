@@ -1,0 +1,78 @@
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #2A5F62;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li.login-link {
+    margin-right: auto; /* Move o link de login para a direita */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Define a cor do link como branco */
+}
+
+nav ul li a:hover {
+    color: #ddd; /* Cor do link ao passar o mouse */
+}
+.logo {
+    width: 70px; 
+    height: auto;
+    margin-left: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+input[type="submit"], input[type="text"], input[type="password"], input[type="email"] {
+    padding: 5px; /* Aumenta o padding vertical dos inputs */
+}
+
+input[type="submit"] {
+    background-color: #2A5F62;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #285c5c;
+}
