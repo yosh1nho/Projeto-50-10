@@ -24,16 +24,13 @@ nav ul {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    transition: background-color 1s, color 1s; 
-    justify-content: space-between; /* Adiciona espaço entre os itens */
 }
 
 nav ul li {
     margin-right: 20px;
 }
 
-<<<<<<< HEAD
+
 .hamburger .line {
     width: 25px;
     height: 3px;
@@ -63,22 +60,23 @@ nav ul li {
 
 .nav-links a {
     color: rgb(255, 255, 255);
-=======
+}
+
 nav ul li a {
->>>>>>> b31d672435563a77cbdbb519b4ec33cabea3c59b
+
     text-decoration: none;
     color: white; /* Define a cor do link como branco */
 }
 
-<<<<<<< HEAD
 .nav-links a:hover {
     color: #ddd;
-    
-=======
+}
+
 nav ul li a:hover {
     color: #ddd; /* Cor do link ao passar o mouse */
->>>>>>> b31d672435563a77cbdbb519b4ec33cabea3c59b
+
 }
+
 .logo {
     width: 60px; 
     height: auto;
