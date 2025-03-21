@@ -5,7 +5,7 @@ body {
     
     height: 100vh;
     background-color: lightblue;
-    background: linear-gradient(to right, white, rgb(110, 200, 182));/*muda a cor de branco para tons de verde-agua suavemente*/
+    background: linear-gradient(to right, #19bac4,rgb(0, 0, 0));/*muda a cor de branco para tons de verde-agua suavemente*/
     display: flex;/*modelo de layout para organizar elementos de forma eficiente dentro de um contêiner.*/
     /*teste*/
     /*teste para criar um conteiner no login*/
@@ -19,7 +19,7 @@ body {
 p{
     font-size: 20px;
 }
-h1 {
+h1 {    
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -83,7 +83,7 @@ h1 {
 .login-form button {
     width: 100%;
     padding: 10px;
-    background-color: #2A5F62;
+    background-color: #19bac4;
     color: white;
     border: none;
     cursor: pointer;
@@ -92,7 +92,7 @@ h1 {
 }
 
 .login-form button:hover {
-    background-color: #285c5c;
+    background-color: red;
 }
 
 .logo-zen {
@@ -153,7 +153,7 @@ h1 {
 
 /* Quando ativado */
 input:checked + .slider {
-    background-color: #2A5F62;
+    background-color: #19bac4;
 }
 
 input:checked + .slider:before {
