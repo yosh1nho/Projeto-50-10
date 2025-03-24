@@ -1,4 +1,30 @@
+body{
+    background-color: #19bac4 ;
+}
+
 .navbar-navbar-expand-lg-bg-body-tertiary{
     background-color: #2A5F62;
+     
+}
+
+
+.container{
+
+    background-color: blue ;
     border-radius: 10px;
+    padding-left: 2px;
+    
+    height: auto;
+    width: auto;
+
+}
+
+.container-dp{
+    background-color: bisque;
+    
+}
+
+.container-analises{
+    background-color: #2A5F62;
+    padding: 10px;
 }
