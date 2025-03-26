@@ -2,11 +2,6 @@ body{
     background-color: #19bac4 ;
 }
 
-.navbar-navbar-expand-lg-bg-body-tertiary{
-    background-color: #2A5F62;
-     
-}
-
 
 .container{
 
@@ -16,6 +11,13 @@ body{
     
     height: auto;
     width: auto;
+
+}
+
+.container-relatorios{
+    padding-bottom: 10px;
+    height: 500px;
+    width: 100px;
 
 }
 
